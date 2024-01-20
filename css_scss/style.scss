@@ -1,0 +1,60 @@
+@mixin flex-direction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.header{
+ @include flex-direction;
+  &__logo {
+    height: 30px;
+    margin: 25px;
+    width: 10px;
+  }
+}
+
+.icon-under-title {
+  @include flex-direction;
+  height: 16px;
+  gap: 12px;
+  background-color: #EAEAEA;
+  padding: 20px;
+  font-size: large;
+}
+
+.localisation {
+  @include flex-direction;
+  &__text {
+    @include flex-direction;
+
+  }
+}
+.first-catchline-secondpart{
+  font-size: 2em;
+  margin-block-start: -1em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  @include flex-direction;
+  font-size: 28px;
+}
+.second-catchline-secondpart{
+  font-size: 1em;
+  margin-block-start: -1em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  @include flex-direction;
+  font-size: 27px;
+}
+h1 {
+  @include flex-direction;
+}
+p {
+  @include flex-direction;
+}
+.button-purple{
+  @include flex-direction;
+}
