@@ -29,19 +29,19 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Roboto";
 }
 
 .first-catchline-secondpart {
   font-size: 2em;
   margin-block-start: -1em;
   margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 28px;
+  font-family: "Roboto";
 }
 
 .second-catchline-secondpart {
@@ -54,24 +54,72 @@
   flex-direction: row;
   justify-content: center;
   font-size: 27px;
+  font-family: "Roboto Light";
 }
 
 h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Roboto";
+  font-size: large;
 }
 
 p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Roboto Light";
 }
 
 .button-purple {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: blueviolet;
+}
+.button-purple .text-button {
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.CTA-part {
+  background-color: #F6F6F6;
+}
+
+.bloc-button {
+  font-family: Roboto;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.bloc-button .title-button {
+  flex-direction: column;
+  display: flex;
+}
+
+.step-restaurant {
+  flex-direction: column;
+  display: flex;
+}
+.step-restaurant .button-step {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  font-size: 16px;
+  padding: 24px 20px;
+  border-radius: 23px;
+  border-color: transparent;
+  margin: 27px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+.step-restaurant .fa-solid fa-mobile-screen-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
