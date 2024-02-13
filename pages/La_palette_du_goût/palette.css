@@ -50,6 +50,21 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  gap: 20px;
+  font-weight: bold;
+  font-family: Shrikhand;
+  font-size: xx-large;
+}
+
+.text-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 96%;
+  gap: 20px;
+  font-weight: bold;
+  font-family: Shrikhand;
+  font-size: x-large;
 }
 
 .big-title_menu {
@@ -57,6 +72,44 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+.heart-shape {
+  display: flex;
+  font-size: xx-large;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 4em;
+}
+
+.fas {
+  color: transparent;
+  background-image: linear-gradient(#DF6FDB, #AB5DDC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  position: absolute;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
+
+.far {
+  background-image: none;
+  position: absolute;
+  opacity: 1;
+}
+
+.heart-shape:hover .far {
+  opacity: 0;
+}
+
+.heart-shape:hover .fas {
+  opacity: 1;
+  transform: translateY(1%) scale(1);
+}
+
+.heart-design:hover {
+  visibility: visible;
 }
 
 .under-title {
@@ -112,6 +165,73 @@
   height: 77px;
 }
 
+.category-entree {
+  width: 95%;
+  font-size: 22px;
+  padding: 7px 20px;
+  border-radius: 23px;
+  border-color: transparent;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+  gap: 5px;
+  background-color: white;
+  font-family: Roboto;
+  height: 77px;
+  animation: appear 1s;
+  animation: delay 2s;
+}
+
+.category-plat {
+  width: 95%;
+  font-size: 22px;
+  padding: 7px 20px;
+  border-radius: 23px;
+  border-color: transparent;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+  gap: 5px;
+  background-color: white;
+  font-family: Roboto;
+  height: 77px;
+  animation: appear 1s;
+  animation: delay 3s;
+}
+
+.category-dessert {
+  width: 95%;
+  font-size: 22px;
+  padding: 7px 20px;
+  border-radius: 23px;
+  border-color: transparent;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+  gap: 5px;
+  background-color: white;
+  font-family: Roboto;
+  height: 77px;
+  animation: appear 1s;
+  animation: delay 4s;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes delay {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .first-title-item {
   font-weight: bold;
 }
@@ -141,16 +261,27 @@
 .button-purple {
   border-radius: 44px;
   height: 60px;
-  width: 15%;
-  background-color: #B361DC;
-  border-color: #B361DC;
+  width: 200px;
+  background: linear-gradient(#DF6FDB, #AB5DDC);
+  border-width: 0px;
+  filter: drop-shadow(1px 5px 13px rgba(0, 0, 0, 0.2));
 }
 .button-purple .text-button {
-  background-color: #B361DC;
   color: white;
   font-size: 18px;
+  font-weight: lighter;
 }
 
+.hover-button:hover {
+  color: white;
+}
+
+@media (hover: hover) {
+  /* when hover is supported */
+  .hover-button:hover {
+    filter: drop-shadow(1px 5px 13px rgba(189, 189, 189, 0.4));
+  }
+}
 .button-spec {
   display: flex;
   flex-direction: row;
@@ -257,7 +388,7 @@
   }
   .cadre-menu {
     width: 90%;
-    font-size: 22px;
+    font-size: 19px;
     padding: 7px 20px;
     border-radius: 23px;
     border-color: transparent;
@@ -279,7 +410,7 @@
   }
   .under-title-item {
     font-family: Roboto;
-    font-size: 15px;
+    font-size: 13px;
   }
   .price-item {
     font-weight: bold;
@@ -293,12 +424,10 @@
   .button-purple {
     border-radius: 44px;
     height: 60px;
-    width: 61%;
-    background-color: #B361DC;
-    border-color: #B361DC;
+    width: 200px;
+    background: linear-gradient(#DF6FDB, #AB5DDC);
   }
   .button-purple .text-button {
-    background-color: #B361DC;
     color: white;
     font-size: 18px;
   }

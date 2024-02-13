@@ -109,11 +109,11 @@ p {
   border-radius: 44px;
   height: 60px;
   width: 15%;
-  background-color: #B361DC;
-  border-color: #B361DC;
+  background: linear-gradient(#DF6FDB, #AB5DDC);
+  border-width: 0px;
+  filter: drop-shadow(1px 5px 13px rgba(0, 0, 0, 0.2));
 }
 .button-purple .text-button {
-  background-color: #B361DC;
   color: white;
   font-size: 18px;
 }
@@ -306,13 +306,44 @@ p {
 .bg-footer {
   background-color: #353535;
 }
-
+.bg-footer .heart-shape {
+  display: flex;
+  font-size: xx-large;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 4em;
+}
+.bg-footer .fas {
+  color: transparent;
+  background-image: linear-gradient(#DF6FDB, #AB5DDC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  position: absolute;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
+.bg-footer .far {
+  background-image: none;
+  position: absolute;
+  opacity: 1;
+}
+.bg-footer .heart-shape:hover .far {
+  opacity: 0;
+}
+.bg-footer .heart-shape:hover .fas {
+  opacity: 1;
+  transform: translateY(1%) scale(1);
+}
+.bg-footer .heart-design:hover {
+  visibility: visible;
+}
 @media only screen and (max-width: 600px) {
-  .size {
+  .bg-footer .size {
     width: 100%;
     margin: -8px;
   }
-  .header {
+  .bg-footer .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -320,10 +351,10 @@ p {
     height: 30px;
     margin: 25px;
   }
-  .header .header__logo {
+  .bg-footer .header .header__logo {
     width: 211px;
   }
-  .icon-under-title {
+  .bg-footer .icon-under-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -335,24 +366,24 @@ p {
     font-size: large;
     font-weight: bold;
   }
-  .icon-localisation {
+  .bg-footer .icon-localisation {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .localisation {
+  .bg-footer .localisation {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .localisation__text {
+  .bg-footer .localisation__text {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     font-family: "Roboto";
   }
-  .first-catchline-secondpart {
+  .bg-footer .first-catchline-secondpart {
     font-size: 2em;
     margin-block-start: -1em;
     margin-block-end: 0.67em;
@@ -366,7 +397,7 @@ p {
     margin: auto;
     height: 108px;
   }
-  .second-catchline-secondpart {
+  .bg-footer .second-catchline-secondpart {
     font-size: 1em;
     margin-block-start: -1em;
     margin-block-end: 0.67em;
@@ -380,7 +411,7 @@ p {
     font-family: "Roboto";
     font-weight: bold;
   }
-  .second-catchline-fourth-part {
+  .bg-footer .second-catchline-fourth-part {
     margin-block-start: -1em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -393,10 +424,10 @@ p {
     font-family: "Roboto";
     text-align: center;
   }
-  .first-sentence {
+  .bg-footer .first-sentence {
     height: 60px;
   }
-  h1 {
+  .bg-footer h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -406,7 +437,7 @@ p {
     height: 14px;
     margin: 0px;
   }
-  p {
+  .bg-footer p {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -415,31 +446,32 @@ p {
     line-height: 26px;
     font-size: 21px;
   }
-  .button-purple {
+  .bg-footer .button-purple {
     border-radius: 44px;
     height: 60px;
-    width: 61%;
-    background-color: #B361DC;
-    border-color: #B361DC;
+    width: 200px;
+    background: linear-gradient(#DF6FDB, #AB5DDC);
+    border-width: 0px;
+    filter: drop-shadow(1px 5px 13px rgba(0, 0, 0, 0.2));
   }
-  .button-purple .text-button {
-    background-color: #B361DC;
+  .bg-footer .button-purple .text-button {
     color: white;
     font-size: 18px;
+    font-weight: lighter;
   }
-  .button-spec {
+  .bg-footer .button-spec {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-bottom: 60px;
     padding-top: 20px;
   }
-  .CTA-part {
+  .bg-footer .CTA-part {
     background-color: #F6F6F6;
     width: 107%;
     padding-top: 40px;
   }
-  .bloc-button {
+  .bg-footer .bloc-button {
     font-family: Roboto;
     font-weight: bold;
     display: flex;
@@ -448,24 +480,24 @@ p {
     padding-top: 40px;
     padding-bottom: 25px;
   }
-  .bloc-button .title-button {
+  .bg-footer .bloc-button .title-button {
     flex-direction: row;
     display: flex;
     justify-content: left;
     margin-left: 20px;
     margin-bottom: 15px;
   }
-  .img-size {
+  .bg-footer .img-size {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-  .step-restaurant {
+  .bg-footer .step-restaurant {
     flex-direction: column;
     display: flex;
   }
-  .step-restaurant .button-step {
+  .bg-footer .step-restaurant .button-step {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -481,38 +513,38 @@ p {
     gap: 30px;
     background-color: #F6F6F6;
   }
-  .step-restaurant .icone-type {
+  .bg-footer .step-restaurant .icone-type {
     gap: 15px;
   }
-  .step-restaurant .fa-solid fa-mobile-screen-button {
+  .bg-footer .step-restaurant .fa-solid fa-mobile-screen-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     color: black;
   }
-  .fa-solid, .fas {
+  .bg-footer .fa-solid, .bg-footer .fas {
     font-size: x-large;
   }
-  .card-restaurant {
+  .bg-footer .card-restaurant {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-  .card-restaurant .spec-img {
+  .bg-footer .card-restaurant .spec-img {
     width: 90%;
     border-radius: 26px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  .bg-restaurant {
+  .bg-footer .bg-restaurant {
     background-color: #EAEAEA;
     width: 105%;
     display: flex;
     flex-direction: column;
   }
-  .first-title {
+  .bg-footer .first-title {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -520,10 +552,10 @@ p {
     font-weight: bold;
     font-size: larger;
   }
-  .under-title {
+  .bg-footer .under-title {
     font-family: "Roboto";
   }
-  .restaurant-frame {
+  .bg-footer .restaurant-frame {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -536,7 +568,7 @@ p {
     border-bottom-left-radius: 26px;
     border-bottom-right-radius: 26px;
   }
-  .restaurant-frame-nd {
+  .bg-footer .restaurant-frame-nd {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -549,13 +581,13 @@ p {
     border-top-left-radius: 26px;
     border-top-right-radius: 26px;
   }
-  .spec-img-nd {
+  .bg-footer .spec-img-nd {
     width: 100%;
     border-radius: 26px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  .first-title-nd {
+  .bg-footer .first-title-nd {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -565,22 +597,22 @@ p {
     margin-top: 15px;
     margin-left: 15px;
   }
-  .under-title-nd {
+  .bg-footer .under-title-nd {
     font-family: "Roboto";
     margin-left: 16px;
   }
-  .footer-logo {
+  .bg-footer .footer-logo {
     width: 100px;
     display: flex;
     flex-direction: column;
     margin: 17px;
     padding-top: 15px;
   }
-  .footer-text {
+  .bg-footer .footer-text {
     color: #F6F6F6;
     font-family: "Roboto";
   }
-  .bg-footer {
+  .bg-footer .bg-footer {
     background-color: #353535;
   }
 }
