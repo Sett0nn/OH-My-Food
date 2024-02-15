@@ -285,6 +285,51 @@ p {
   margin-left: 15px;
 }
 
+.heart-shape {
+  display: flex;
+  font-size: xx-large;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 4em;
+}
+
+.fas {
+  color: transparent;
+  background-image: linear-gradient(#DF6FDB, #AB5DDC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  position: absolute;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
+
+.far {
+  background-image: none;
+  position: absolute;
+  opacity: 1;
+}
+
+.heart-shape:hover .far {
+  opacity: 0;
+}
+
+.heart-shape:hover .fas {
+  opacity: 1;
+  transform: translateY(1%) scale(1.3) translateX(2%);
+}
+
+.heart-design:hover {
+  visibility: visible;
+}
+
+.heart-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
 .under-title-nd {
   font-family: "Roboto";
   margin-left: 16px;
@@ -306,44 +351,13 @@ p {
 .bg-footer {
   background-color: #353535;
 }
-.bg-footer .heart-shape {
-  display: flex;
-  font-size: xx-large;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 4em;
-}
-.bg-footer .fas {
-  color: transparent;
-  background-image: linear-gradient(#DF6FDB, #AB5DDC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-weight: 900;
-  position: absolute;
-  transition: all 200ms ease-in-out;
-  opacity: 0;
-}
-.bg-footer .far {
-  background-image: none;
-  position: absolute;
-  opacity: 1;
-}
-.bg-footer .heart-shape:hover .far {
-  opacity: 0;
-}
-.bg-footer .heart-shape:hover .fas {
-  opacity: 1;
-  transform: translateY(1%) scale(1);
-}
-.bg-footer .heart-design:hover {
-  visibility: visible;
-}
+
 @media only screen and (max-width: 600px) {
-  .bg-footer .size {
+  .size {
     width: 100%;
     margin: -8px;
   }
-  .bg-footer .header {
+  .header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -351,10 +365,10 @@ p {
     height: 30px;
     margin: 25px;
   }
-  .bg-footer .header .header__logo {
+  .header .header__logo {
     width: 211px;
   }
-  .bg-footer .icon-under-title {
+  .icon-under-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -366,24 +380,24 @@ p {
     font-size: large;
     font-weight: bold;
   }
-  .bg-footer .icon-localisation {
+  .icon-localisation {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .bg-footer .localisation {
+  .localisation {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .bg-footer .localisation__text {
+  .localisation__text {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     font-family: "Roboto";
   }
-  .bg-footer .first-catchline-secondpart {
+  .first-catchline-secondpart {
     font-size: 2em;
     margin-block-start: -1em;
     margin-block-end: 0.67em;
@@ -397,7 +411,7 @@ p {
     margin: auto;
     height: 108px;
   }
-  .bg-footer .second-catchline-secondpart {
+  .second-catchline-secondpart {
     font-size: 1em;
     margin-block-start: -1em;
     margin-block-end: 0.67em;
@@ -411,7 +425,7 @@ p {
     font-family: "Roboto";
     font-weight: bold;
   }
-  .bg-footer .second-catchline-fourth-part {
+  .second-catchline-fourth-part {
     margin-block-start: -1em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -424,10 +438,10 @@ p {
     font-family: "Roboto";
     text-align: center;
   }
-  .bg-footer .first-sentence {
+  .first-sentence {
     height: 60px;
   }
-  .bg-footer h1 {
+  h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -437,7 +451,7 @@ p {
     height: 14px;
     margin: 0px;
   }
-  .bg-footer p {
+  p {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -446,7 +460,7 @@ p {
     line-height: 26px;
     font-size: 21px;
   }
-  .bg-footer .button-purple {
+  .button-purple {
     border-radius: 44px;
     height: 60px;
     width: 200px;
@@ -454,24 +468,24 @@ p {
     border-width: 0px;
     filter: drop-shadow(1px 5px 13px rgba(0, 0, 0, 0.2));
   }
-  .bg-footer .button-purple .text-button {
+  .button-purple .text-button {
     color: white;
     font-size: 18px;
     font-weight: lighter;
   }
-  .bg-footer .button-spec {
+  .button-spec {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-bottom: 60px;
     padding-top: 20px;
   }
-  .bg-footer .CTA-part {
+  .CTA-part {
     background-color: #F6F6F6;
     width: 107%;
     padding-top: 40px;
   }
-  .bg-footer .bloc-button {
+  .bloc-button {
     font-family: Roboto;
     font-weight: bold;
     display: flex;
@@ -480,24 +494,24 @@ p {
     padding-top: 40px;
     padding-bottom: 25px;
   }
-  .bg-footer .bloc-button .title-button {
+  .bloc-button .title-button {
     flex-direction: row;
     display: flex;
     justify-content: left;
     margin-left: 20px;
     margin-bottom: 15px;
   }
-  .bg-footer .img-size {
+  .img-size {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-  .bg-footer .step-restaurant {
+  .step-restaurant {
     flex-direction: column;
     display: flex;
   }
-  .bg-footer .step-restaurant .button-step {
+  .step-restaurant .button-step {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -513,38 +527,38 @@ p {
     gap: 30px;
     background-color: #F6F6F6;
   }
-  .bg-footer .step-restaurant .icone-type {
+  .step-restaurant .icone-type {
     gap: 15px;
   }
-  .bg-footer .step-restaurant .fa-solid fa-mobile-screen-button {
+  .step-restaurant .fa-solid fa-mobile-screen-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     color: black;
   }
-  .bg-footer .fa-solid, .bg-footer .fas {
+  .fa-solid, .fas {
     font-size: x-large;
   }
-  .bg-footer .card-restaurant {
+  .card-restaurant {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-  .bg-footer .card-restaurant .spec-img {
+  .card-restaurant .spec-img {
     width: 90%;
     border-radius: 26px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  .bg-footer .bg-restaurant {
+  .bg-restaurant {
     background-color: #EAEAEA;
     width: 105%;
     display: flex;
     flex-direction: column;
   }
-  .bg-footer .first-title {
+  .first-title {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -552,10 +566,10 @@ p {
     font-weight: bold;
     font-size: larger;
   }
-  .bg-footer .under-title {
+  .under-title {
     font-family: "Roboto";
   }
-  .bg-footer .restaurant-frame {
+  .restaurant-frame {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -568,7 +582,7 @@ p {
     border-bottom-left-radius: 26px;
     border-bottom-right-radius: 26px;
   }
-  .bg-footer .restaurant-frame-nd {
+  .restaurant-frame-nd {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -581,13 +595,13 @@ p {
     border-top-left-radius: 26px;
     border-top-right-radius: 26px;
   }
-  .bg-footer .spec-img-nd {
+  .spec-img-nd {
     width: 100%;
     border-radius: 26px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  .bg-footer .first-title-nd {
+  .first-title-nd {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -597,22 +611,60 @@ p {
     margin-top: 15px;
     margin-left: 15px;
   }
-  .bg-footer .under-title-nd {
+  .heart-shape {
+    display: flex;
+    font-size: xx-large;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 4em;
+  }
+  .fas {
+    color: transparent;
+    background-image: linear-gradient(#DF6FDB, #AB5DDC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 900;
+    position: absolute;
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+  }
+  .far {
+    background-image: none;
+    position: absolute;
+    opacity: 1;
+  }
+  .heart-shape:hover .far {
+    opacity: 0;
+  }
+  .heart-shape:hover .fas {
+    opacity: 1;
+    transform: translateY(1%) scale(1);
+  }
+  .heart-design:hover {
+    visibility: visible;
+  }
+  .heart-place {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 56px;
+  }
+  .under-title-nd {
     font-family: "Roboto";
     margin-left: 16px;
   }
-  .bg-footer .footer-logo {
+  .footer-logo {
     width: 100px;
     display: flex;
     flex-direction: column;
     margin: 17px;
     padding-top: 15px;
   }
-  .bg-footer .footer-text {
+  .footer-text {
     color: #F6F6F6;
     font-family: "Roboto";
   }
-  .bg-footer .bg-footer {
+  .bg-footer {
     background-color: #353535;
   }
 }

@@ -81,45 +81,6 @@ width: 100%;
   justify-content: flex-start;
 }
 
-.heart-shape{
-  display: flex;
-  font-size: xx-large;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 4em;
-}
-
-.fas {
-  color: transparent;
-  background-image: linear-gradient(#DF6FDB, #AB5DDC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-weight: 900;
-  position: absolute;
-  transition: all 200ms ease-in-out;
-  opacity: 0;
-}
-
-.far{
-  background-image: none;
-  position: absolute;
-  opacity: 1;
-}
-
-.heart-shape:hover .far{
-  opacity: 0;
-}
-
-.heart-shape:hover .fas {
-  opacity: 1;
-  transform: translateY(1%) scale(1.0);
-}
-
-  .heart-design:hover {
-    visibility: visible;
-  }
-
-
 .under-title{
 font-family: Roboto;
   margin-top: 10px;
@@ -153,6 +114,8 @@ font-family: Roboto;
   flex-direction: column;
   display: flex;
   width:30%;
+  overflow: hidden;
+
 }
 
 .cadre-menu{
@@ -238,8 +201,30 @@ font-family: Roboto;
   font-size: 17px;
 }
 
+.hover-form{
+display: flex;
+  flex-direction: row;
+  gap: 49px;
+}
+
 .price-item{
 font-weight: bold;
+}
+
+.menu-item-check{
+background-color: #99e2d0;
+  margin-right: -4rem;
+}
+
+.fa-solid fa-check{
+  background-color: #99e2d0;
+  margin-right: -6rem;
+}
+
+.item-menu:hover .menu-item-check {
+  margin-right: 0;
+  transition: margin-right 1s;
+
 }
 
 .item-under-title{
@@ -394,6 +379,7 @@ font-weight: bold;
     flex-direction: column;
     display: flex;
     width: 100%;
+    overflow: hidden;
   }
 
   .cadre-menu{
@@ -424,6 +410,10 @@ font-weight: bold;
   .under-title-item{
     font-family: Roboto;
     font-size: 13px;
+  }
+
+  .hover-form{
+
   }
 
   .price-item{

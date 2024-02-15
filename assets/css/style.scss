@@ -215,10 +215,6 @@ p {
   font-family: "Roboto";
 }
 
-.restaurant-adress{
-
-}
-
 .restaurant-frame {
   display: flex;
   flex-direction: column;
@@ -262,6 +258,52 @@ p {
   margin-left: 15px;
 }
 
+.heart-shape{
+  display: flex;
+  font-size: xx-large;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 4em;
+}
+
+.fas {
+  color: transparent;
+  background-image: linear-gradient(#DF6FDB, #AB5DDC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  position: absolute;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
+
+.far{
+  background-image: none;
+  position: absolute;
+  opacity: 1;
+}
+
+.heart-shape:hover .far{
+  opacity: 0;
+}
+
+.heart-shape:hover .fas {
+  opacity: 1;
+  transform: translateY(1%) scale(1.3) translateX(2%);
+}
+
+.heart-design:hover {
+  visibility: visible;
+}
+
+
+.heart-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
 .under-title-nd {
   font-family: "Roboto";
   margin-left: 16px;
@@ -280,44 +322,7 @@ p {
 }
 .bg-footer {
   background-color: #353535;
-
-  .heart-shape {
-    display: flex;
-    font-size: xx-large;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 4em;
-  }
-
-  .fas {
-    color: transparent;
-    background-image: linear-gradient(#DF6FDB, #AB5DDC);
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-weight: 900;
-    position: absolute;
-    transition: all 200ms ease-in-out;
-    opacity: 0;
-  }
-
-  .far {
-    background-image: none;
-    position: absolute;
-    opacity: 1;
-  }
-
-  .heart-shape:hover .far {
-    opacity: 0;
-  }
-
-  .heart-shape:hover .fas {
-    opacity: 1;
-    transform: translateY(1%) scale(1.0);
-  }
-
-  .heart-design:hover {
-    visibility: visible;
-  }
+}
 
   @media only screen and (max-width: 600px) {
     @mixin flex-direction {
@@ -580,6 +585,51 @@ p {
       margin-left: 15px;
     }
 
+    .heart-shape{
+      display: flex;
+      font-size: xx-large;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 4em;
+    }
+
+    .fas {
+      color: transparent;
+      background-image: linear-gradient(#DF6FDB, #AB5DDC);
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-weight: 900;
+      position: absolute;
+      transition: all 200ms ease-in-out;
+      opacity: 0;
+    }
+
+    .far{
+      background-image: none;
+      position: absolute;
+      opacity: 1;
+    }
+
+    .heart-shape:hover .far{
+      opacity: 0;
+    }
+
+    .heart-shape:hover .fas {
+      opacity: 1;
+      transform: translateY(1%) scale(1.0);
+    }
+
+    .heart-design:hover {
+      visibility: visible;
+    }
+
+    .heart-place {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 56px;
+    }
+
     .under-title-nd {
       font-family: "Roboto";
       margin-left: 16px;
@@ -602,4 +652,4 @@ p {
     }
 
   }
-}
+
