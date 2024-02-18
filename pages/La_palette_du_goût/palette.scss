@@ -51,6 +51,7 @@ width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 104%;
 }
 
 .bg-color{
@@ -72,16 +73,6 @@ width: 100%;
   font-size: xx-large;
 }
 
-.text-style{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 96%;
-  gap: 20px;
-  font-weight: bold;
-  font-family: Shrikhand;
-  font-size: x-large;
-}
 
 
 .big-title_menu{
@@ -89,6 +80,7 @@ width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 30px;
 }
 
 .under-title{
@@ -110,7 +102,7 @@ font-family: Roboto;
   display: flex;
   flex-direction: row;
   border: 1px solid #ffff;
-  width: 420px;
+  width: 55%;
   box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
   background: white;
   border-radius: 20px;
@@ -182,6 +174,8 @@ font-family: Roboto;
 
 .menu-item-card-subtitle {
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-item-card-price {
@@ -201,7 +195,7 @@ font-family: Roboto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 75%;
+  width: 50%;
 }
 
 .specs-title{
@@ -257,11 +251,12 @@ font-family: Roboto;
  display: flex;
   flex-direction: column;
   gap: 15px;
+  animation: delay 2s;
 }
 
 .category-plat{
   animation: delay 3s;
-  @include category-entree
+  @include category-entree;
 }
 
 .category-dessert{
@@ -361,6 +356,15 @@ background-color: #99e2d0;
   }
 }
 
+.title-footer{
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  justify-content: flex-end;
+  margin-top: 16px;
+  margin-right: 50px;
+}
+
 
 .button-spec{
   display: flex;
@@ -374,17 +378,20 @@ background-color: #99e2d0;
   width: 100px;
   display: flex;
   flex-direction: column;
-  margin: 17px;
-  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 50px;
 }
 
 .footer-text{
   color: #F6F6F6;
   font-family: "Roboto";
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .bg-footer{
   background-color: #353535;
-
+  position: relative;
 }
 
 
@@ -441,6 +448,17 @@ background-color: #99e2d0;
     background-color: #F6F6F6;
     width: 104%;
   }
+  .text-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 96%;
+    gap: 20px;
+    font-weight: bold;
+    font-family: Shrikhand;
+    font-size: x-large;
+  }
+
   .big-title_menu{
     width: 70%;
     display: flex;
@@ -468,7 +486,7 @@ background-color: #99e2d0;
     display: flex;
     flex-direction: row;
     border: 1px solid #ffff;
-    width: 320px;
+    width: 90%;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
     background: white;
     border-radius: 20px;
@@ -599,6 +617,7 @@ background-color: #99e2d0;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    animation: 2s;
   }
 
   .category-plat{
