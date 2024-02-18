@@ -179,26 +179,48 @@ p {
   display: flex;
   justify-content: center;
 }
-.step-restaurant .button-step {
+
+.button-step {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
   width: auto;
   font-size: 16px;
-  padding: 24px 20px;
+  padding: 24px 6px;
+  padding-right: 56px;
   border-radius: 23px;
   border-color: transparent;
-  margin: 27px;
+  margin: 40px;
   margin-top: 10px;
   margin-bottom: 9px;
   gap: 30px;
   background-color: #F6F6F6;
 }
-.step-restaurant .icone-type {
-  gap: 15px;
+
+.numbers-position {
+  display: flex;
+  position: relative;
+  right: 17px;
 }
-.step-restaurant .fa-solid fa-mobile-screen-button {
+
+.numerotation-fonctionnement {
+  height: 25px;
+  width: 25px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-shape {
+  display: flex;
+}
+
+.fa-solid fa-mobile-screen-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -379,6 +401,8 @@ p {
     padding: 20px;
     font-size: large;
     font-weight: bold;
+    box-shadow: 4px 1px 5px 5px rgba(0, 0, 0, 0.2509803922);
+    position: relative;
   }
   .icon-localisation {
     display: flex;
@@ -511,26 +535,55 @@ p {
     flex-direction: column;
     display: flex;
   }
-  .step-restaurant .button-step {
+  .button-step {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     width: auto;
     font-size: 16px;
-    padding: 24px 20px;
+    padding: 24px 10px;
+    padding-right: 50px;
     border-radius: 23px;
     border-color: transparent;
-    margin: 27px;
+    margin: 40px;
     margin-top: 10px;
     margin-bottom: 9px;
-    gap: 30px;
+    gap: 40px;
     background-color: #F6F6F6;
   }
-  .step-restaurant .icone-type {
+  .numbers-position {
+    display: flex;
+    position: relative;
+    right: 22px;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 527px) {
+  .numbers-position {
+    display: flex;
+    margin-left: -76px;
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .numerotation-fonctionnement {
+    height: 25px;
+    width: 25px;
+    background-color: #9356DC;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .store-shape {
+    display: flex;
+  }
+  .icone-type {
     gap: 15px;
   }
-  .step-restaurant .fa-solid fa-mobile-screen-button {
+  .fa-solid fa-mobile-screen-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
