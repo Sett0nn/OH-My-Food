@@ -168,6 +168,9 @@ font-family: Roboto;
 
 .menu-item-card-title {
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .property-under-title{
@@ -250,9 +253,9 @@ font-family: Roboto;
 }
 
 .category-entree{
-  @include category-dish;
-  animation: appear 1s;
-  animation: delay 2s;
+ display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .category-plat{
@@ -482,9 +485,6 @@ background-color: #99e2d0;
     flex-direction: column;
     gap: 2px;
     padding: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .menu-item-card-check {
@@ -526,6 +526,9 @@ background-color: #99e2d0;
 
   .menu-item-card-title {
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .property-under-title{
@@ -536,6 +539,9 @@ background-color: #99e2d0;
 
   .menu-item-card-subtitle {
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .menu-item-card-price {

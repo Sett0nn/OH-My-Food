@@ -160,6 +160,9 @@
 
 .menu-item-card-title {
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .property-under-title {
@@ -228,20 +231,9 @@
 }
 
 .category-entree {
-  width: 95%;
-  font-size: 22px;
-  padding: 7px 20px;
-  border-radius: 23px;
-  border-color: transparent;
-  margin: 10px;
-  margin-top: 10px;
-  margin-bottom: 9px;
-  gap: 5px;
-  background-color: white;
-  font-family: Roboto;
-  height: 77px;
-  animation: appear 1s;
-  animation: delay 2s;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .category-plat {
@@ -470,9 +462,6 @@
     flex-direction: column;
     gap: 2px;
     padding: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
   .menu-item-card-check {
     opacity: 1;
@@ -509,6 +498,9 @@
   }
   .menu-item-card-title {
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .property-under-title {
     font-weight: normal;
@@ -517,6 +509,9 @@
   }
   .menu-item-card-subtitle {
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .menu-item-card-price {
     font-weight: 700;
