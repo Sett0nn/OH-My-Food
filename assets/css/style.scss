@@ -211,6 +211,52 @@ p {
   font-size: larger;
 }
 
+.heart-shape{
+  display: flex;
+  font-size: xx-large;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 4em;
+}
+
+.fas {
+  color: transparent;
+  background-image: linear-gradient(#DF6FDB, #AB5DDC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  position: absolute;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
+
+.far{
+  background-image: none;
+  position: absolute;
+  opacity: 1;
+}
+
+.heart-shape:hover .far{
+  opacity: 0;
+}
+
+.heart-shape:hover .fas {
+  opacity: 1;
+  transform: translateY(1%) scale(1.2);
+}
+
+.heart-design:hover {
+  visibility: visible;
+}
+
+.heart-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 56px;
+}
+
+
 .under-title {
   font-family: "Roboto";
 }
@@ -570,7 +616,7 @@ p {
 
     .heart-shape:hover .fas {
       opacity: 1;
-      transform: translateY(1%) scale(1.0);
+      transform: translateY(1%) scale(1.1);
     }
 
     .heart-design:hover {
