@@ -95,6 +95,7 @@
   justify-content: center;
   font-size: 22px;
   font-family: Roboto;
+  gap: 15px;
 }
 
 .menu-item-card {
@@ -230,43 +231,14 @@
   height: 77px;
 }
 
-.category-entree {
+.category-plat {
+  animation: delay 3s;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.category-plat {
-  width: 95%;
-  font-size: 22px;
-  padding: 7px 20px;
-  border-radius: 23px;
-  border-color: transparent;
-  margin: 10px;
-  margin-top: 10px;
-  margin-bottom: 9px;
-  gap: 5px;
-  background-color: white;
-  font-family: Roboto;
-  height: 77px;
-  animation: appear 1s;
-  animation: delay 3s;
-}
-
 .category-dessert {
-  width: 95%;
-  font-size: 22px;
-  padding: 7px 20px;
-  border-radius: 23px;
-  border-color: transparent;
-  margin: 10px;
-  margin-top: 10px;
-  margin-bottom: 9px;
-  gap: 5px;
-  background-color: white;
-  font-family: Roboto;
-  height: 77px;
-  animation: appear 1s;
   animation: delay 4s;
 }
 
@@ -441,7 +413,7 @@
   .container-position {
     display: flex;
     justify-content: center;
-    font-size: 22px;
+    font-size: 16px;
     font-family: Roboto;
   }
   .menu-item-card {
@@ -504,7 +476,7 @@
   }
   .property-under-title {
     font-weight: normal;
-    font-size: 17px;
+    font-size: 12px;
     font-family: sans-serif;
   }
   .menu-item-card-subtitle {
@@ -560,6 +532,23 @@
     background-color: white;
     font-family: Roboto;
     height: 77px;
+  }
+  .category-entree {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .category-plat {
+    animation: delay 3s;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .category-dessert {
+    animation: delay 4s;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
   .first-title-item {
     font-weight: bold;

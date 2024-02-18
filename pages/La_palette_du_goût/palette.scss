@@ -103,6 +103,7 @@ font-family: Roboto;
   justify-content: center;
   font-size: 22px;
   font-family: Roboto;
+  gap: 15px;
 }
 
 .menu-item-card {
@@ -252,21 +253,18 @@ font-family: Roboto;
   height: 77px;
 }
 
-.category-entree{
+@mixin category-entree{
  display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .category-plat{
-  @include category-dish;
-  animation: appear 1s;
   animation: delay 3s;
+  @include category-entree
 }
 
 .category-dessert{
-  @include category-dish;
-  animation: appear 1s;
   animation: delay 4s;
 }
 
@@ -462,7 +460,7 @@ background-color: #99e2d0;
   .container-position{
     display: flex;
     justify-content: center;
-    font-size: 22px;
+    font-size: 16px;
     font-family: Roboto;
   }
 
@@ -533,7 +531,7 @@ background-color: #99e2d0;
 
   .property-under-title{
     font-weight: normal;
-    font-size: 17px;
+    font-size: 12px;
     font-family: sans-serif;
   }
 
@@ -596,6 +594,23 @@ background-color: #99e2d0;
     font-family: Roboto;
     height: 77px;
   }
+
+  .category-entree{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .category-plat{
+    animation: delay 3s;
+    @include category-entree
+  }
+
+  .category-dessert{
+    animation: delay 4s;
+    @include category-entree
+  }
+
   .first-title-item{
     font-weight: bold;
 
