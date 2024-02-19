@@ -110,11 +110,17 @@ p {
   width: 15%;
   background: linear-gradient(#DF6FDB, #AB5DDC);
   border-width: 0px;
-  filter: drop-shadow(1px 5px 13px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(1px 5px 13px rgba(0, 0, 0, 0.3));
 }
 .button-purple .text-button {
   color: white;
   font-size: 18px;
+  animation: 3s linear 0.1s colorIt;
+}
+
+.button-purple:hover {
+  box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+  animation-delay: 2s;
 }
 
 .button-spec {
@@ -157,7 +163,7 @@ p {
   justify-content: space-evenly;
   margin-left: 20px;
   margin-bottom: 15px;
-  width: 60%;
+  width: 45%;
 }
 
 .restaurant-form {
@@ -290,7 +296,7 @@ p {
 
 .heart-shape:hover .fas {
   opacity: 1;
-  transform: translateY(1%) scale(1.2);
+  transform: translateY(1%) scale(1.2) translateX(15%);
 }
 
 .heart-design:hover {
@@ -357,6 +363,10 @@ p {
   margin-left: 16px;
 }
 
+footer {
+  background-color: #353535;
+}
+
 .footer-logo {
   width: 100px;
   display: flex;
@@ -374,6 +384,50 @@ p {
   background-color: #353535;
 }
 
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear forwards;
+}
+
+.index-container {
+  animation: fade 4s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    visibility: visible;
+  }
+  50% {
+    transform: rotate(180deg);
+    visibility: visible;
+  }
+  to {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 600px) {
   .size {
     width: 100%;
@@ -430,7 +484,7 @@ p {
     flex-direction: row;
     justify-content: center;
     width: 70%;
-    font-size: 28px;
+    font-size: 27px;
     font-family: "Roboto";
     margin: auto;
     height: 108px;
@@ -457,8 +511,8 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    font-size: 21px;
+    width: 95%;
+    font-size: 19px;
     font-family: "Roboto";
     text-align: center;
   }
@@ -496,6 +550,10 @@ p {
     color: white;
     font-size: 18px;
     font-weight: lighter;
+  }
+  .button-purple:hover {
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+    animation-delay: 2s;
   }
   .button-spec {
     display: flex;
@@ -543,7 +601,7 @@ p {
     width: auto;
     font-size: 16px;
     padding: 24px 10px;
-    padding-right: 90px;
+    padding-right: 72px;
     border-radius: 23px;
     border-color: transparent;
     margin: 40px;
@@ -558,7 +616,7 @@ p {
     position: relative;
   }
   .icone-position {
-    margin-right: 15px;
+    margin-right: -15px;
   }
   .numerotation-fonctionnement {
     height: 25px;
@@ -711,8 +769,14 @@ p {
     color: #F6F6F6;
     font-family: "Roboto";
   }
+  .footer-icone {
+    font-size: large;
+  }
   .bg-footer {
     background-color: #353535;
+  }
+  .fa-solid fa-utensils .fa-solid fa-handshake-angle {
+    font-size: medium;
   }
 }
 

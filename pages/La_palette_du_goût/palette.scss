@@ -251,6 +251,10 @@ font-family: Roboto;
  display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.category-entrees{
+  @include category-entree;
   animation: delay 2s;
 }
 
@@ -261,6 +265,7 @@ font-family: Roboto;
 
 .category-dessert{
   animation: delay 4s;
+  @include category-entree;
 }
 
 @keyframes appear {
@@ -340,7 +345,7 @@ background-color: #99e2d0;
   filter: drop-shadow(1px 5px 13px rgba(0, 0, 0, 0.2));
   .text-button{
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: lighter;
 
   }
@@ -374,16 +379,17 @@ background-color: #99e2d0;
   padding-top: 20px;
 }
 
+footer{
+  margin: auto;
+  width: 101%;
+}
+
 .footer-logo{
   width: 100px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 40px;
-  padding-left: 50px;
 }
 
 .footer-text{
-  color: #F6F6F6;
+  color: white;
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
@@ -392,9 +398,22 @@ background-color: #99e2d0;
 .bg-footer{
   background-color: #353535;
   position: relative;
+  left: 50px;
+  top: 28px;
 }
 
+.footer-shape{
+  display: contents;
+}
+.footer-title-lines{
+  padding-top: 35px;
+}
 
+.position-logo-footer{
+  position: relative;
+  top: 102px;
+  left: 33px;
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -405,7 +424,7 @@ background-color: #99e2d0;
     width:100%;
   }
   .size{
-    width: 100%;
+    width: 104%;
     margin:-8px;
     animation: fadeOut 1s forwards;
   }
@@ -622,12 +641,12 @@ background-color: #99e2d0;
 
   .category-plat{
     animation: delay 3s;
-    @include category-entree
+    @include category-entree;
   }
 
   .category-dessert{
     animation: delay 4s;
-    @include category-entree
+    @include category-entree;
   }
 
   .first-title-item{
@@ -644,10 +663,6 @@ background-color: #99e2d0;
   .under-title-item{
     font-family: Roboto;
     font-size: 13px;
-  }
-
-  .hover-form{
-
   }
 
   .price-item{
@@ -680,20 +695,39 @@ background-color: #99e2d0;
     padding-top: 20px;
   }
 
-  .footer-logo{
+
+  .position-logo-footer{
     width: 100px;
     display: flex;
     flex-direction: column;
-    margin: 17px;
-    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-left: 50px;
   }
 
   .footer-text{
-    color: #F6F6F6;
+    color: black;
     font-family: "Roboto";
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
   .bg-footer{
     background-color: #353535;
-
+    position: relative;
+  }
+  .title-footer{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 11px;
+    justify-content: flex-end;
+    margin-top: 48px;
+    margin-right: 149px;
+  }
+  .assistance{
+    display: flex;
+    color: black;
+  }
+  .footer-shape{
+    display: flex;
   }
 }
