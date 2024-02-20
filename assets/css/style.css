@@ -1,4 +1,8 @@
 /* desktop version */
+body {
+  margin: 0;
+}
+
 .size {
   width: 100%;
 }
