@@ -128,8 +128,23 @@ p {
   flex-wrap: wrap;
 }
 
+.restaurant-shape{
+
+}
+
 .restaurant-text{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 61%;
+}
+
+.title-restaurant{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: x-large;
+  padding-top: 40px;
+  padding-bottom: 25px;
 }
 
 .bloc-button {
@@ -170,11 +185,11 @@ p {
     @include flex-direction;
     width: auto;
     font-size: 16px;
-    padding: 24px 6px;
-    padding-right: 56px;
+    padding: 24px 13px;
+    padding-right: 111px;
     border-radius: 23px;
     border-color: transparent;
-    margin: 40px;
+    margin: 20px;
     margin-top: 10px;
     margin-bottom: 9px;
     gap: 30px;
@@ -301,7 +316,7 @@ p {
 .restaurant-frame-nd {
   background-color: white;
   padding-bottom: 20px;
-  width: 43%;
+  width: 30%;
   margin-right: 50px;
   border-bottom-left-radius: 26px;
   border-bottom-right-radius: 26px;
