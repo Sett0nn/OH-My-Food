@@ -173,6 +173,15 @@ p {
   justify-content: center;
   gap: 70px;
 }
+@media only screen and (max-width: 430px) {
+  .restaurant-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+  }
+}
+
 .img-size {
   @include flex-direction;
 }
@@ -368,7 +377,7 @@ footer{
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   z-index: 1;
@@ -499,7 +508,7 @@ body{
       display: flex;
       flex-direction: row;
       justify-content: center;
-      width: 82%;
+      width: 100%;
       font-size: 19px;
       font-family: "Roboto";
       text-align: center;
@@ -596,8 +605,8 @@ body{
       }
 
     .numbers-position {
-      left: 27px;
-      position: relative;
+      left: 12px;
+      position: absolute;
     }
     .icone-position {
       margin-right: -15px;
@@ -687,11 +696,12 @@ body{
       background-color: white;
       padding-bottom: 20px;
       width: 92%;
-      margin-bottom: 25px;
       border-bottom-left-radius: 26px;
       border-bottom-right-radius: 26px;
       border-top-left-radius: 26px;
       border-top-right-radius: 26px;
+      margin: auto;
+      margin-bottom: 25px;
     }
     .spec-img-nd {
       width: 100%;

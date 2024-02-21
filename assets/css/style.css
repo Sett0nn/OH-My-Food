@@ -183,6 +183,14 @@ p {
   gap: 70px;
 }
 
+@media only screen and (max-width: 430px) {
+  .restaurant-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+  }
+}
 .img-size {
   display: flex;
   flex-direction: row;
@@ -394,7 +402,7 @@ footer {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   z-index: 1;
@@ -516,7 +524,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 82%;
+    width: 100%;
     font-size: 19px;
     font-family: "Roboto";
     text-align: center;
@@ -616,8 +624,8 @@ footer {
     white-space: nowrap;
   }
   .numbers-position {
-    left: 27px;
-    position: relative;
+    left: 12px;
+    position: absolute;
   }
   .icone-position {
     margin-right: -15px;
@@ -697,11 +705,12 @@ footer {
     background-color: white;
     padding-bottom: 20px;
     width: 92%;
-    margin-bottom: 25px;
     border-bottom-left-radius: 26px;
     border-bottom-right-radius: 26px;
     border-top-left-radius: 26px;
     border-top-right-radius: 26px;
+    margin: auto;
+    margin-bottom: 25px;
   }
   .spec-img-nd {
     width: 100%;
