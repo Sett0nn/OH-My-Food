@@ -11,9 +11,6 @@ body {
   margin: 0;
 }
 
-.size {
-  width: 100%;
-}
 
 .header {
   @include flex-direction;
@@ -25,7 +22,10 @@ body {
 }
 
 .icon-under-title {
-  @include flex-direction;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 94%;
   height: 16px;
   gap: 12px;
   background-color: #EAEAEA;
@@ -406,15 +406,13 @@ footer{
     }
 
 
-    .size {
-      width: 100%;
-      margin: -8px;
-    }
+body{
+  margin: 0;
+}
 
     .header {
       @include flex-direction;
       height: 30px;
-      margin: 25px;
 
       .header__logo {
         width: 211px;
@@ -422,7 +420,10 @@ footer{
     }
 
     .icon-under-title {
-      @include flex-direction;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 94%;
       height: 16px;
       gap: 12px;
       background-color: #EAEAEA;
@@ -572,7 +573,6 @@ footer{
         padding-right: 72px;
         border-radius: 23px;
         border-color: transparent;
-        margin: 40px;
         margin-top: 10px;
         margin-bottom: 9px;
         gap: 40px;
@@ -747,32 +747,39 @@ footer{
       margin-left: 16px;
     }
 
-    .footer-logo {
-      width: 100px;
-      display: flex;
-      flex-direction: column;
-      margin: 17px;
-      padding-top: 15px;
-    }
     .footer-text {
       color: #F6F6F6;
       font-family: "Roboto";
     }
 
     .footer-icone {
-      font-size: large;
+      font-size: small;
+      padding-left: 20px;
     }
     .bg-footer {
       background-color: #353535;
+      padding-top: 1px;
+      padding-bottom: 14px;
     }
-    .fa-solid fa-utensils .fa-solid fa-handshake-angle{
-      font-size: medium;
+    .fa fa-utensils .fa fa-handshake-angle{
+      font-size: small;
 
     }
+
     .proposition-footer{
-
+      display: flex;
+      gap: 12px;
+    }
+    .assistance{
+      padding-left: 48px;
     }
 
+    .title-footer{
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      margin: 2px;
+    }
 
   }
 
