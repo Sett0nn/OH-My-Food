@@ -428,7 +428,7 @@ footer {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   .size {
     width: 100%;
     margin: -8px;
