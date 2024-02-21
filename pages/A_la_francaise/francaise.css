@@ -631,38 +631,34 @@ footer {
     padding-bottom: 60px;
     padding-top: 20px;
   }
-  .position-logo-footer {
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-    padding-left: 50px;
-  }
   .footer-text {
-    color: black;
+    color: #F6F6F6;
     font-family: "Roboto";
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  }
+  .footer-icone {
+    font-size: small;
+    padding-left: 20px;
   }
   .bg-footer {
     background-color: #353535;
-    position: relative;
+    padding-top: 1px;
+    padding-bottom: 14px;
+  }
+  .fa fa-utensils .fa fa-handshake-angle {
+    font-size: small;
+  }
+  .proposition-footer {
+    display: flex;
+    gap: 12px;
+  }
+  .assistance {
+    padding-left: 48px;
   }
   .title-footer {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 11px;
-    justify-content: flex-end;
-    margin-top: 48px;
-    margin-right: 149px;
-  }
-  .assistance {
-    display: flex;
-    color: black;
-  }
-  .footer-shape {
-    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin: 2px;
   }
 }
 

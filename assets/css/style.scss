@@ -26,6 +26,7 @@ body {
   flex-direction: row;
   justify-content: center;
   width: 94%;
+  margin-top: 25px;
   height: 16px;
   gap: 12px;
   background-color: #EAEAEA;
@@ -128,7 +129,6 @@ p {
 }
 
 .restaurant-text{
-  margin-left: 8%;
   display: flex;
 }
 
@@ -154,6 +154,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 70px;
 }
 .img-size {
   @include flex-direction;
@@ -301,8 +302,7 @@ p {
   background-color: white;
   padding-bottom: 20px;
   width: 43%;
-  margin-left: 20px;
-  margin-bottom: 25px;
+  margin-right: 50px;
   border-bottom-left-radius: 26px;
   border-bottom-right-radius: 26px;
   border-top-left-radius: 26px;
@@ -367,7 +367,7 @@ footer{
 
 .index-container{
   animation: fade 4s;
-
+  margin-top: 20px;
 }
 
 @keyframes spin {
@@ -408,6 +408,7 @@ footer{
 
 body{
   margin: 0;
+  width: 394px;
 }
 
     .header {
@@ -423,11 +424,9 @@ body{
       display: flex;
       flex-direction: row;
       justify-content: center;
-      width: 94%;
       height: 16px;
-      gap: 12px;
       background-color: #EAEAEA;
-      padding: 20px;
+      padding: 11px;
       font-size: large;
       font-weight: bold;
       box-shadow: 4px 1px 5px 5px #00000040;
@@ -515,7 +514,7 @@ body{
 
       .text-button {
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: lighter;
 
       }
@@ -535,7 +534,7 @@ body{
     }
     .CTA-part {
       background-color: #F6F6F6;
-      width: 100%;
+      width: 394px;
       padding-top: 40px
     }
 
@@ -634,7 +633,7 @@ body{
 
     .bg-restaurant {
       background-color: #EAEAEA;
-      width: 105%;
+      width: 100%;
       display: flex;
       flex-direction: column;
     }
@@ -672,7 +671,6 @@ body{
       background-color: white;
       padding-bottom: 20px;
       width: 92%;
-      margin-left: 20px;
       margin-bottom: 25px;
       border-bottom-left-radius: 26px;
       border-bottom-right-radius: 26px;
