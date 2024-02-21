@@ -172,6 +172,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 70px;
+  padding-bottom: 25px;
 }
 @media only screen and (max-width: 430px) {
   .restaurant-form {
@@ -235,7 +236,10 @@ p {
   font-size: x-large;
 }
 .card-restaurant {
-  @include flex-direction;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
 
   .spec-img {
     width: 90%;
@@ -244,6 +248,26 @@ p {
     border-bottom-right-radius: 0px;
 
   }
+}
+
+.background-nouveau{
+  position: absolute;
+  display: grid;
+  background-color: #99E2D0;
+  bottom: 136px;
+  margin-right: 20px;
+}
+
+.card-new {
+  width: 4.5rem;
+  margin: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: green;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .bg-restaurant {
@@ -654,6 +678,26 @@ body{
         border-bottom-right-radius: 0px;
 
       }
+    }
+
+    .background-nouveau{
+      position: absolute;
+      display: grid;
+      background-color: #99E2D0;
+      bottom: 136px;
+      margin-right: 20px;
+    }
+
+    .card-new {
+      width: 4.5rem;
+      margin: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: green;
+      font-family: Roboto;
+      font-weight: bold;
+      font-size: 17px;
     }
 
     .bg-restaurant {
