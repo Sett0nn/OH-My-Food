@@ -13,7 +13,6 @@ body {
   justify-content: center;
   width: 100%;
   height: 30px;
-  margin: 25px;
 }
 .header .header__logo {
   width: 211px;
@@ -27,7 +26,6 @@ body {
   height: 16px;
   gap: 12px;
   background-color: #EAEAEA;
-  padding: 20px;
   font-size: large;
   font-weight: bold;
 }
@@ -137,12 +135,11 @@ p {
 
 .CTA-part {
   background-color: #F6F6F6;
-  width: 107%;
+  width: 100%;
   padding-top: 40px;
 }
 
 .restaurant-part {
-  gap: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -174,7 +171,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 15px;
 }
 
 .img-size {
@@ -257,7 +253,7 @@ p {
 
 .bg-restaurant {
   background-color: #EAEAEA;
-  width: 101%;
+  width: 100%;
 }
 
 .first-title {
@@ -568,7 +564,7 @@ footer {
   }
   .CTA-part {
     background-color: #F6F6F6;
-    width: 107%;
+    width: 100%;
     padding-top: 40px;
   }
   .bloc-button {
