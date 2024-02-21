@@ -238,7 +238,7 @@ p {
 }
 
 .bg-restaurant {
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
   width: 100%;
 }
 
@@ -425,7 +425,6 @@ footer{
 
 body{
   margin: 0;
-  width: 394px;
 }
 
     .header {
@@ -443,7 +442,7 @@ body{
       justify-content: center;
       height: 16px;
       background-color: #EAEAEA;
-      padding: 11px;
+
       font-size: large;
       font-weight: bold;
       box-shadow: 4px 1px 5px 5px #00000040;
@@ -500,7 +499,7 @@ body{
       display: flex;
       flex-direction: row;
       justify-content: center;
-      width: 95%;
+      width: 82%;
       font-size: 19px;
       font-family: "Roboto";
       text-align: center;
@@ -551,7 +550,7 @@ body{
     }
     .CTA-part {
       background-color: #F6F6F6;
-      width: 394px;
+      width: 100%;
       padding-top: 40px
     }
 
