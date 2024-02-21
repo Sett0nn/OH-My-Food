@@ -18,9 +18,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 94%;
+  width: 100%;
   margin-top: 25px;
-  height: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 20px;
   gap: 12px;
   background-color: #EAEAEA;
   font-size: large;
@@ -99,14 +101,14 @@ p {
   justify-content: center;
   width: 100%;
   font-family: "Roboto";
-  line-height: 26px;
+  line-height: 60px;
   font-size: 16px;
 }
 
 .button-purple {
   border-radius: 44px;
-  height: 60px;
-  width: 15%;
+  height: 48px;
+  width: 14%;
   background: linear-gradient(#DF6FDB, #AB5DDC);
   border-width: 0px;
   filter: drop-shadow(1px 5px 13px rgba(0, 0, 0, 0.3));
@@ -171,7 +173,7 @@ p {
   justify-content: space-evenly;
   margin-left: 20px;
   margin-bottom: 15px;
-  width: 45%;
+  width: 40%;
 }
 
 .restaurant-form {
